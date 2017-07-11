@@ -5,19 +5,14 @@
 console.log(data);
 
 
-
 // 1: Show me how to calculate the average price of all items.
 function question1 () {
   // Answer:
-  var avgPrice = [];
   var sum = 0;
-  for (let i=0; i<data.length; i++){
-    avgPrice.push(data[i]['price']);
-  }
-  for (let j=0; j<avgPrice.length;j++){
-  sum += avgPrice[j];
-  }
-  console.log('The average price is $'+ Math.round(sum/avgPrice.length *100)/100);
+  data.forEach(function(prices, index){
+     return sum += data[index]['price'];
+  })
+  console.log('The average price is $'+ Math.round(sum/data.length *100)/100);
 }
 
 
@@ -25,11 +20,16 @@ function question1 () {
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
   // Answer:
-  for (var i=0; i <data.length; i++){
-    if (data[i]['price'] <= 18 && data[i]['price'] >= 14) {
-      console.log(data[i]['title']);
-    }
-  }
+
+  data.forEach(function(priceRange, index){
+    if (data[index]['price'] <= 18 && data[index]['price'] >= 14)
+    console.log(data[index]['title']);
+  })
+  //for (var i=0; i <data.length; i++){
+  //  if (data[i]['price'] <= 18 && data[i]['price'] >= 14) {
+  //    console.log(data[i]['title']);
+  //  }
+  //}
 }
 
 
