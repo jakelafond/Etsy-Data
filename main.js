@@ -24,7 +24,7 @@ function question2 () {
   data.forEach(function(priceRange, index){
     if (data[index]['price'] <= 18 && data[index]['price'] >= 14)
     console.log(data[index]['title']);
-  })
+  });
   //for (var i=0; i <data.length; i++){
   //  if (data[i]['price'] <= 18 && data[i]['price'] >= 14) {
   //    console.log(data[i]['title']);
@@ -37,25 +37,36 @@ function question2 () {
 // 3: Which item has a "GBP" currency code? Display it's name and price.
 function question3 () {
   // Answer:
-  var gbpCurrency = [];
-  for (var i=0; i<data.length; i++){
-    if (data[i]['currency_code'] == 'GBP'){
-      gbpCurrency.push(data[i]['title']);
-      gbpCurrency.push(data[i]['price']);
+  data.forEach(function(gBP, index){
+    if (data[index]['currency_code'] == 'GBP'){
+      console.log(data[index]['title'] + ' costs ' + data[index]['price'] + ' pounds');
     }
-  }
-  console.log(gbpCurrency[0] + ' costs ' + gbpCurrency[1] + ' pounds');
+
+  });
+  //var gbpCurrency = [];
+//  for (var i=0; i<data.length; i++){
+//    if (data[i]['currency_code'] == 'GBP'){
+//      gbpCurrency.push(data[i]['title']);
+//      gbpCurrency.push(data[i]['price']);
+//    }
+//  }
+//  console.log(gbpCurrency[0] + ' costs ' + gbpCurrency[1] + ' pounds');
 }
 
 
 // 4: Display a list of all items who are made of wood.
 function question4 () {
   // Answer:
-  for (var i=0; i<data.length; i++){
-    if (data[i]['materials'].includes('wood')){
-      console.log(data[i]['title']);
+  data.forEach(function(wood, index){
+    if (data[index]['materials'].includes('wood')){
+      console.log(data[index]['title']);
     }
-  }
+  });
+//  for (var i=0; i<data.length; i++){
+//    if (data[i]['materials'].includes('wood')){
+//      console.log(data[i]['title']);
+//    }
+//  }
 }
 
 
@@ -63,15 +74,24 @@ function question4 () {
 //    Display the name, number of items and the items it is made of.
 function question5 () {
   // Answer:
-  var manyMaterials = [];
-  for (var i=0; i<data.length; i++){
-    if (data[i]['materials'].length >= 8){
-      console.log(data[i]['title']+ ' has ' + data[i]['materials'].length + ' materials: ');
-      for (var j=0; j<data[i]['materials'].length; j++){
-        console.log('-' + data[i]['materials'][j]);
-      }
-    }
-  }
+
+   data.forEach(function(data){
+     if (data.materials.length >= 8){
+       console.log(data.title + ' has ' + data.materials.length + ' materials: ');
+       data.materials.forEach(function(material){
+         console.log('- ' + material);
+       })
+     }
+   })
+//  var manyMaterials = [];
+//  for (var i=0; i<data.length; i++){
+//    if (data[i]['materials'].length >= 8){
+//      console.log(data[i]['title']+ ' has ' + data[i]['materials'].length + ' materials: ');
+//      for (var j=0; j<data[i]['materials'].length; j++){
+//        console.log('-' + data[i]['materials'][j]);
+//      }
+//    }
+//  }
 }
 
 
@@ -80,10 +100,17 @@ function question5 () {
 function question6 () {
   // Answer:
   var selfMadeCount = 0;
-  for (var i=0; i<data.length; i++){
-    if (data[i]['who_made'] == 'i_did'){
+  data.forEach(function(data){
+    if (data.who_made == 'i_did'){
       selfMadeCount += 1;
     }
-  }
-  console.log(selfMadeCount + ' items were made by their sellers.');
+  });
+      console.log(selfMadeCount + ' items were made by their sellers.');
+//  var selfMadeCount = 0;
+//  for (var i=0; i<data.length; i++){
+//    if (data[i]['who_made'] == 'i_did'){
+//      selfMadeCount += 1;
+//    }
+//  }
+//  console.log(selfMadeCount + ' items were made by their sellers.');
 }
