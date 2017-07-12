@@ -29,11 +29,13 @@ Since it will be logged out, please use console.log() statements in each of the 
 1970s Schlitz Malt Liquor Glass Beer Pitcher
 The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsmeade village, harry potter gift, three broomsticks mug
 Hand Painted Colorful Feather Glass
-Groomsman Gifts - Bottle Opener Credit Card Sized PERSONALIZED - FREE SHIPPING```
+Groomsman Gifts - Bottle Opener Credit Card Sized PERSONALIZED - FREE SHIPPING
+```
 
 3: Which item has a "GBP" currency code? Display its name and price.
 
-```1970s Schlitz Malt Liquor Glass Beer Pitcher costs 18 pounds.```
+```1970s Schlitz Malt Liquor Glass Beer Pitcher costs 18 pounds.
+```
 
 4: Display a list of all items that are made of wood.
 
@@ -41,7 +43,8 @@ Groomsman Gifts - Bottle Opener Credit Card Sized PERSONALIZED - FREE SHIPPING``
 Bottle cap catcher personalized. Man cave gift for him- Wooden Beer pub sign - Groomsmen wedding Gift is made of wood.
 Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.
 Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
-Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.```
+Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
+```
 
 5: Which items are made of eight or more materials? Display the name, number of materials and the materials it is made of.
 
@@ -68,8 +71,10 @@ The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsme
 - beer gift
 - etched harry potter glass
 - the three broomsticks glass
-- personalized harry potter glass```
+- personalized harry potter glass
+```
 
 6: How many items were made by their sellers?
 
-```18 items were made by their sellers.```
+```18 items were made by their sellers.
+```
