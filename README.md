@@ -76,5 +76,4 @@ The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsme
 
 6: How many items were made by their sellers?
 
-```18 items were made by their sellers.
-```
+```18 items were made by their sellers.```
